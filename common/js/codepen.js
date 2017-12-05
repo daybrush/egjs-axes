@@ -78,7 +78,7 @@ $("[codepen]").each(function () {
 			header: "<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi'>",
 			html: $html.get(0).outerHTML,
 			html_pre_processor: "none",
-			css: css[0].replace(/\.\.\//g, getDomainUrl() + "../").replace(/\.\//g, getDomainUrl()),
+			css: css[0].replace(/(\.+\/)/g, getDomainUrl() + "$1"),
 			css_pre_processor: "none",
 			css_starter: "neither",
 			css_prefix_free: false,
