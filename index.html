@@ -13,8 +13,6 @@
     <script src="./common/js/bootstrap.min.js"></script>
 </head>
 
-	<link rel="stylesheet" href="assets/css/character.css">
-
 
 	<script src="release/latest/dist/axes.pkgd.js"></script>
 
@@ -85,28 +83,18 @@
     </div>
 </section>
 <div>
-	<section id="showcase" class="docs section showcase">
-		<div class="container">
-			<div class="docs-inner">
-				<h2 class="title text-center">Showcase</h2>
-				<div class="demobox showcase" codepen="character">
-					<div id="__react-content"></div>
+	<section id="index" class="section">
+			<div class="container">
+				<div class="docs-inner">
+					<p class="text-center">
+						<a href="#getting-started">Getting Started </a>/ 
+						<a href="#inputs"> Inputs &amp; Demos </a>/
+						<a href="#projects"> Projects </a>
+					</p>
 				</div>
 			</div>
-		</div>
-	</section>
-	<section id="index" class="docs section index">
-		<div class="container">
-			<div class="docs-inner">
-				<p class="text-center">
-					<a href="#getting-started">Getting Started </a>/ 
-					<a href="#inputs"> Inputs &amp; Demos </a>/
-					<a href="#projects"> Projects </a>
-				</p>
-			</div>
-		</div>
-	</section>
-	<section id="getting-started" class="docs section started">
+		</section>
+	<section id="getting-started" class="docs section">
 		<div class="container">
 			<div class="docs-inner">
 				<h2 class="title text-center">Getting Started</h2>
@@ -215,48 +203,48 @@ The key of the axis specifies the name to use as the logical virtual coordinate 
 				<p class="description">If you select a inputType, you can show demos.</p>
 				<ul class="input-list">
 					
-					 <li class="input-item PanInput" onclick="showInput('PanInput', this)">
-						<a class="logo PanInput" href="#PanInput" id="PanInput">
+					 <li class="input-item" onclick="showInput('PanInput', this)">
+						<div class="logo PanInput">
 							<div class="logo-input-area">
 							<div class="mouse">
     <div class="mouse-left-button"></div>
     <div class="mouse-right-button"></div>
 </div>
 							</div>
-						</a>
+						</div>
 						<p>PanInput</p>
 					</li>
 					
-					 <li class="input-item PinchInput" onclick="showInput('PinchInput', this)">
-						<a class="logo PinchInput" href="#PinchInput" id="PinchInput">
+					 <li class="input-item" onclick="showInput('PinchInput', this)">
+						<div class="logo PinchInput">
 							<div class="logo-input-area">
 							<div class="pinch pinch-left"></div>
 <div class="pinch pinch-right"></div>
 							</div>
-						</a>
+						</div>
 						<p>PinchInput</p>
 					</li>
 					
-					 <li class="input-item WheelInput" onclick="showInput('WheelInput', this)">
-						<a class="logo WheelInput" href="#WheelInput" id="WheelInput">
+					 <li class="input-item" onclick="showInput('WheelInput', this)">
+						<div class="logo WheelInput">
 							<div class="logo-input-area">
 							<div class="mouse">
     <div class="wheel"></div>
 </div>
 							</div>
-						</a>
+						</div>
 						<p>WheelInput</p>
 					</li>
 					
-					 <li class="input-item MoveKeyInput" onclick="showInput('MoveKeyInput', this)">
-						<a class="logo MoveKeyInput" href="#MoveKeyInput" id="MoveKeyInput">
+					 <li class="input-item" onclick="showInput('MoveKeyInput', this)">
+						<div class="logo MoveKeyInput">
 							<div class="logo-input-area">
 							<div class="arrow-key arrow-key-left"><span>◄</span></div>
 <div class="arrow-key arrow-key-top"><span>▲</span></div>
 <div class="arrow-key arrow-key-right"><span>►</span></div>
 <div class="arrow-key arrow-key-bottom"><span>▼</span></div>
 							</div>
-						</a>
+						</div>
 						<p>MoveKeyInput</p>
 					</li>
 					
@@ -559,20 +547,10 @@ The key of the axis specifies the name to use as the logical virtual coordinate 
     </script>
 
 
-	<script src="assets/js/character_bundle.js"></script>
-
 <script>
-	var hash = (location.hash || "#PanInput").replace("#", "");
-	var selectedItem = "PanInput";
-	var input = $(".input-list .input-item." + hash);
 	var inputs = $(".input-list .input-item");
 	var docs = $("#input .docs-inner");
 
-	if (input.length > 0)  {
-		selectedItem = hash;
-	} else {
-		input = [inputs[0]];
-	}
 	function showInput(name, self) {
 		docs.css("display", "none");
 		inputs.removeClass("checked");
@@ -580,7 +558,7 @@ The key of the axis specifies the name to use as the logical virtual coordinate 
 		$(self).addClass("checked");
 		$("#input .docs-inner." + name).css("display", "block");
 	}
-	showInput(selectedItem, input[0]);
+	showInput("PanInput", inputs[0]);
 </script>
 </body>
 </html>
