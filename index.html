@@ -126,6 +126,12 @@
 <h5 id="es5">ES5</h5>
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"//naver.github.io/egjs-axes/release/latest/dist/axes.pkgd.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 </code></pre></div></div>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">Axes</span> <span class="o">=</span> <span class="nx">eg</span><span class="p">.</span><span class="nx">Axes</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">PanInput</span> <span class="o">=</span> <span class="nx">Axes</span><span class="p">.</span><span class="nx">PanInput</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">PinchInput</span> <span class="o">=</span> <span class="nx">Axes</span><span class="p">.</span><span class="nx">PinchInput</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">WheelInput</span> <span class="o">=</span> <span class="nx">Axes</span><span class="p">.</span><span class="nx">WheelInput</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">MoveKeyInput</span> <span class="o">=</span> <span class="nx">Axes</span><span class="p">.</span><span class="nx">MoveKeyInput</span><span class="p">;</span>
+</code></pre></div></div>
 
 <h5 id="es6">ES6+</h5>
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">Axes</span><span class="p">,</span> <span class="p">{</span><span class="nx">PanInput</span><span class="p">,</span> <span class="nx">PinchInput</span><span class="p">,</span> <span class="nx">WheelInput</span><span class="p">,</span> <span class="nx">MoveKeyInput</span><span class="p">}</span> <span class="k">from</span> <span class="s2">"@egjs/axes"</span><span class="p">;</span>
@@ -165,10 +171,10 @@ The key of the axis specifies the name to use as the logical virtual coordinate 
 
 <p>Axes provides three inputTypes.</p>
 <ul>
-  <li><a href="./release/latest/doc/eg.Axes.PanInput.html">eg.Axes.PanInput</a></li>
-  <li><a href="./release/latest/doc/eg.Axes.PinchInput.html">eg.Axes.PinchInput</a></li>
-  <li><a href="./release/latest/doc/eg.Axes.WheelInput.html">eg.Axes.WheelInput</a></li>
-  <li><a href="./release/latest/doc/eg.Axes.MoveKeyInput.html">eg.Axes.MoveKeyInput</a></li>
+  <li><a href="./release/latest/doc/eg.Axes.PanInput.html">PanInput</a></li>
+  <li><a href="./release/latest/doc/eg.Axes.PinchInput.html">PinchInput</a></li>
+  <li><a href="./release/latest/doc/eg.Axes.WheelInput.html">WheelInput</a></li>
+  <li><a href="./release/latest/doc/eg.Axes.MoveKeyInput.html">MoveKeyInput</a></li>
 </ul>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// create inputTypes to use</span>
