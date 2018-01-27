@@ -27993,7 +27993,7 @@ var Cloud = function (_Component3) {
   return Cloud;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-var hair = ["short", "baldhead", "bob"];
+var hair = ["short", "baldhead", "bob", "ponytail", "twintail"];
 var look = ["", "grin", "angry", "absence"];
 
 var Character = function (_Component4) {
