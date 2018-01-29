@@ -28192,7 +28192,7 @@ var App = function (_Component5) {
   };
 
   App.prototype.componentDidMount = function componentDidMount() {
-    this.axes.connect(new __WEBPACK_IMPORTED_MODULE_2__index_js__["b" /* PanInput */]({ axis: "x y", scale: [0.1, 0.2] }), __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.findDOMNode(this.character));
+    this.axes.connect(new __WEBPACK_IMPORTED_MODULE_2__index_js__["b" /* PanInput */]({ axis: "x y", scale: [0.1, -0.2] }), __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.findDOMNode(this.character));
   };
 
   return App;
