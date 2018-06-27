@@ -27876,7 +27876,7 @@ var Sun = function (_Component) {
         bounce: [0.2, 0.2]
       }
     };
-    _this.inputs = [new __WEBPACK_IMPORTED_MODULE_2__index_js__["d" /* WheelInput */]({ axis: "zoom", useNormalized: false, scale: 0.1 }), new __WEBPACK_IMPORTED_MODULE_2__index_js__["c" /* PinchInput */]({ axis: "zoom", scale: 0.1 })];
+    _this.inputs = [new __WEBPACK_IMPORTED_MODULE_2__index_js__["d" /* WheelInput */]({ axis: "zoom", useNormalized: false, scale: 0.1 }), new __WEBPACK_IMPORTED_MODULE_2__index_js__["c" /* PinchInput */]({ axis: "zoom", scale: 0.3 })];
     return _this;
   }
 
@@ -27911,7 +27911,7 @@ var Tree = function (_Component2) {
         bounce: [0.2, 0.2]
       }
     };
-    _this2.inputs = [new __WEBPACK_IMPORTED_MODULE_2__index_js__["d" /* WheelInput */]({ axis: "zoom", useNormalized: false, scale: 0.1 }), new __WEBPACK_IMPORTED_MODULE_2__index_js__["c" /* PinchInput */]({ axis: "zoom", scale: 0.1 })];
+    _this2.inputs = [new __WEBPACK_IMPORTED_MODULE_2__index_js__["d" /* WheelInput */]({ axis: "zoom", useNormalized: false, scale: 0.1 }), new __WEBPACK_IMPORTED_MODULE_2__index_js__["c" /* PinchInput */]({ axis: "zoom", scale: 0.3 })];
     return _this2;
   }
 
@@ -28171,9 +28171,7 @@ var App = function (_Component5) {
             'div',
             { className: 'broad' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Tree, { right: '40%', bottom: '80%', mediaHide: true }),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Character, { ref: function ref(axes) {
-                return _this8.character = axes;
-              }, face: '', pos: pos, delta: delta }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Character, { face: '', pos: pos, delta: delta }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Tree, { right: '20%', bottom: '30%' }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Tree, { right: '70%', bottom: '30%' })
           ),
@@ -28189,10 +28187,6 @@ var App = function (_Component5) {
         );
       }
     );
-  };
-
-  App.prototype.componentDidMount = function componentDidMount() {
-    this.axes.connect(new __WEBPACK_IMPORTED_MODULE_2__index_js__["b" /* PanInput */]({ axis: "x y", scale: [0.1, -0.2] }), __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.findDOMNode(this.character));
   };
 
   return App;
